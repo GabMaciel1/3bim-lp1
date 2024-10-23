@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace ConsoleApp2
 {
@@ -55,6 +56,11 @@ namespace ConsoleApp2
 
                     Console.WriteLine("nome:");
                     string nome = Console.ReadLine();
+                    while (Regex.IsMatch(nome, @"^[a-zA-Z\s]+$"));
+                        {
+                        Console.WriteLine(" Nome invalido, digite apenas letras. Digite seu nome:");
+string nome = Console.ReadLine();
+                    }
 
                     Console.WriteLine("idade:");
                     int idade = int.Parse(Console.ReadLine());
