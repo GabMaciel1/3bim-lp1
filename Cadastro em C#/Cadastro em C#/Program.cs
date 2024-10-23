@@ -45,6 +45,7 @@ namespace Cadastro_em_C_
                     Console.WriteLine("1. Criar Cadastro");
                     Console.WriteLine("Nome:");
                     cadastro1.nome = Console.ReadLine();
+                    Console.WriteLine("idade:");
                     cadastro1.idade = Console.ReadLine();
                         //"sexo só podem ser dois", usar if else
                     cadastro1.sexo = Console.ReadLine();
