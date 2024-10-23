@@ -1,66 +1,94 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
     internal class Program
     {
+        struct Cadastro
+        {
+            public string Nome;
+            public int Idade;
+            public string Sexo;
+            public string CPF;
+            public string Telefone;
+            public string Cidade;
+            public string Estado;
+
+            public Cadastro(string nome, int idade, string sexo, string cpf, string telefone, string cidade, string estado)
+            {
+                Nome = nome;
+                Idade = idade;
+                Sexo = sexo;
+                CPF = cpf;
+                Telefone = telefone;
+                Cidade = cidade;
+                Estado = estado;
+            }
+
+            public void ExibirCadastro()
+            {
+                Console.WriteLine($"Nome: {Nome}");
+                Console.WriteLine($"Idade: {Idade}");
+                Console.WriteLine($"Sexo: {Sexo}");
+                Console.WriteLine($"CPF: {CPF}");
+                Console.WriteLine($"Telefone: {Telefone}");
+                Console.WriteLine($"Cidade: {Cidade}");
+                Console.WriteLine($"Estado: {Estado}");
+            }
+        }
+
         static void Main(string[] args)
         {
-            //nome:
-            //idade:
-            //sexo:
-            //cpf:
-            //telefone:
-            //cidade:
-            //estado:
             Console.WriteLine("1. Criar Cadastro");
             Console.WriteLine("2. Ler Cadastros");
             Console.WriteLine("3. Atualizar Cadastro");
             Console.WriteLine("4. Excluir Cadastro");
             Console.WriteLine("5. Sair");
 
-            //escolhendo qual opção do menu abrir
             int decisao;
             decisao = int.Parse(Console.ReadLine());
 
             switch (decisao)
             {
-                case 1
-                    : Console.WriteLine("Criar Cadastro:")
+                case 1:
+                    Console.WriteLine("Criar Cadastro:");
 
-                        Console.WriteLine("nome:");
-                        Console.ReadLine();
+                    Console.WriteLine("nome:");
+                    string nome = Console.ReadLine();
 
                     Console.WriteLine("idade:");
-                    Console.ReadLine();
+                    int idade = int.Parse(Console.ReadLine());
 
                     Console.WriteLine("sexo:");
-                    Console.ReadLine();
+                    string sexo = Console.ReadLine();
 
                     Console.WriteLine("cpf:");
-                    Console.ReadLine();
+                    string cpf = Console.ReadLine();
 
                     Console.WriteLine("telefone:");
-                    Console.ReadLine();
+                    string telefone = Console.ReadLine();
 
                     Console.WriteLine("cidade:");
-                    Console.ReadLine();
+                    string cidade = Console.ReadLine();
 
                     Console.WriteLine("estado:");
-                    Console.ReadLine();
+                    string estado = Console.ReadLine();
+
+                    Cadastro novoCadastro = new Cadastro(nome, idade, sexo, cpf, telefone, cidade, estado);
+                    novoCadastro.ExibirCadastro();
 
 
+                    break;
 
+                case 5:
+                    Console.WriteLine("Saindo...");
+                    break;
 
-
-
-
+                default:
+                    Console.WriteLine("Opção inválida.");
+                    break;
             }
-
         }
     }
 }
+
