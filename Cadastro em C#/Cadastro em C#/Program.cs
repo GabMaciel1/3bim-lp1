@@ -42,6 +42,8 @@ namespace Cadastro_em_C_
                     //falta colocar a formatação
                     
                     cadastro cadastro1 = new cadastro(); //uma opção é criar uma array de 99999 espaços
+                    Console.WriteLine("1. Criar Cadastro");
+                    Console.WriteLine("Nome:");
                     cadastro1.nome = Console.ReadLine();
                     cadastro1.idade = Console.ReadLine();
                         //"sexo só podem ser dois", usar if else
