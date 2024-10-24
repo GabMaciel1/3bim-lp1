@@ -1,0 +1,78 @@
+Console.WriteLine("Olá você está na parte de criação de cadastros! Insira os seguintes dados: ");
+                    Console.WriteLine("Nome: ");
+                    cadArray[n].nome = Console.ReadLine();
+                    while (Regex.IsMatch(cadArray[n], @"^[a-zA-Z]+$") = true)
+                    {
+                        Console.Writeline("Digite apenas seu nome, apenas letras");
+                            Console.WriteLine("Digite seu Nome:");
+                            cadArray[n].nome = Console.ReadLine();
+
+                    }
+                    Console.WriteLine("Idade: ");
+                    cadArray[n].idade = Console.ReadLine();
+                    while (Regex.IsMatch(cadArray[n].idade, @"^[a-zA-Z]+$") = false || cadArray[n].idade.Length > 1)
+                    {
+                        Console.Writeline("Digite apenas sua idade, apenas numeros");
+                            Console.WriteLine("Digite sua idade:");
+                            cadArray[n].idade = Console.ReadLine();
+
+                    }
+                    Console.WriteLine("Sexo: ");
+                    cadArray[n].sexo = Console.ReadLine();
+                    while (Regex.IsMatch(cadArray[n].sexo, @"^[a-zA-Z]+$") = false || cadArray[n].sexo.Length > 0 )
+                    {
+                        Console.Writeline("Digite apenas seu sexo, apenas f ou m");
+                            Console.WriteLine("Digite seu sexo:");
+                            cadArray[n].idade = Console.ReadLine();
+
+                    }
+
+                    Console.WriteLine("cpf: ");
+                    cadArray[n].cpf = Console.ReadLine();
+                      while (Regex.IsMatch(cadArray[n].cpf, @"^[a-zA-Z]+$") = true)
+                    {
+                        Console.Writeline("Digite apenas seu cpf, apenas numeros");
+                            Console.WriteLine("Digite seu cpf:");
+                            cadArray[n].cpf = Console.ReadLine();
+
+                    }
+                    using static System.Console;
+
+WriteLine(cadArray[n].cpf("12345678901"));
+WriteLine(cadArray[n].cpf("00123456789"));
+string cadArray[n].cpf(string cadArray[n].cpf) => cadArray[n].cpf.Substring(0, 3) + "." + cadArray[n].cpf.Substring(3, 3) + "." + cadArray[n].cpf.Substring(6, 3) + "-" + cadArray[n].cpf.Substring(9, 2);
+
+                    Console.WriteLine("Telefone: ");
+                    cadArray[n].telefone = Console.ReadLine();
+                      while (Regex.IsMatch(cadArray[n].telefone, @"^[a-zA-Z]+$") = true)
+                    {
+                        Console.Writeline("Digite apenas seu telefone, apenas numeros");
+                            Console.WriteLine("Digite seu telefone:");
+                            cadArray[n].telefone = Console.ReadLine();
+                            string cadArray[n].telefone = cadArray[n].telefone
+string cadArray[n].telefone = string.cadArray[n].telefone("{0:(##) #####-####}", cadArray[n].telefone);
+
+                    }
+
+                    Console.WriteLine("Cidade: ");
+                    cadArray[n].cidade = Console.ReadLine();
+                    while (Regex.IsMatch(cadArray[n].cidade, @"^[a-zA-Z]+$") = true)
+                    {
+                        Console.Writeline("Digite apenas sua cidade, apenas letras");
+                            Console.WriteLine("Digite sua cidade:");
+                            cadArray[n].ciade = Console.ReadLine();
+
+                    }
+
+                    Console.WriteLine("Estado: ");
+                    cadArray[n].estado = Console.ReadLine();
+                      while (Regex.IsMatch(cadArray[n].estado, @"^[a-zA-Z]+$") = false || cadArray[n].estado.Length > 1 )
+                    {
+                        Console.Writeline("Digite apenas seu estado, apenas dois caracteres");
+                            Console.WriteLine("Digite seu estado:");
+                            cadArray[n].estado = Console.ReadLine();
+
+                    }
+
+                    Console.WriteLine("Digite a palavra 'concluido': ");
+                    cadArray[n].statusCadastro = Console.ReadLine();
