@@ -569,7 +569,7 @@ namespace Cadastro_em_C_
                 Console.WriteLine();
                 Console.WriteLine("                         Nicolas Barbosa Tomaselli Pita");
                 Console.WriteLine("                         Gabrielly Regis");
-                Console.WriteLine("                         Bruna ");
+                Console.WriteLine("                         Bruna Cardoso");
                 Console.WriteLine("                         Nycolas Aguiar");
                 Console.WriteLine("                         Paulo Borges");
                 Console.WriteLine();
